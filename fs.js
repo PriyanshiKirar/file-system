@@ -1,3 +1,13 @@
+const http=require("http");
+
+const server=http.createServer(function(req,res){
+
+    res.end("give the reponse");
+});
+server.listen(3000,function(){
+    console.log("serverr is runing");
+})
+
 // const fs=require("fs");
 // fs.writeFile("./a.text","hellow gyes",function(err){
 //     if(err) console.error(err);
@@ -51,6 +61,6 @@
 // console.log(os.arch());
 
 
-const os=require("os");
-console.log(os.cpus());
+// const os=require("os");
+// console.log(os.cpus());
  
