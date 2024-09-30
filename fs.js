@@ -1,12 +1,38 @@
 const http=require("http");
 
 const server=http.createServer(function(req,res){
+    // console.log(req.);
+if( req.url === "/"){
+res.end("hyy")
+}
+else if(req.url === '/About'){
+    res.end("about")
+}
+else if(req.url === '/prizing'){
+    res.end("przing")
+}
+else res.end("404 is not found")
 
-    res.end("give the reponse");
-});
-server.listen(3000,function(){
-    console.log("serverr is runing");
 })
+
+server.listen(process.env.PORT || 3000);
+
+
+
+
+
+
+
+
+// const http=require("http");
+
+// const server=http.createServer(function(req,res){
+
+//     res.end("give the reponse");
+// });
+// server.listen(3000,function(){
+//     console.log("serverr is runing");
+// })
 
 // const fs=require("fs");
 // fs.writeFile("./a.text","hellow gyes",function(err){
