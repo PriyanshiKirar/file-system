@@ -1,5 +1,5 @@
-const http=require("http");
 
+const http=require("http");
 const server=http.createServer(function(req,res){
     // console.log(req.);
 if( req.url === "/"){
@@ -12,22 +12,11 @@ else if(req.url === '/prizing'){
     res.end("przing")
 }
 else res.end("404 is not found")
-
 })
-
 server.listen(process.env.PORT || 3000);
 
-
-
-
-
-
-
-
 // const http=require("http");
-
 // const server=http.createServer(function(req,res){
-
 //     res.end("give the reponse");
 // });
 // server.listen(3000,function(){
@@ -40,14 +29,12 @@ server.listen(process.env.PORT || 3000);
 //     else console.log("itst done")
 // });
 
-
 // Read file-read the data of another file
 // const fs=require("fs");
 // fs.readFile("./a.text","utf8",function(err,data){
 //     if(err) console.log(err);
 //     else console.log(data)
 // });
-
 
 //   Add the data in after
 // const fs=require("fs");
@@ -71,10 +58,7 @@ server.listen(process.env.PORT || 3000);
 //     else console.log("copied the data of from a.text");
 // });
 
-
-
     //  Operating system
-
 // const os=require("os");
 // // end of line(EOl) it means \n dusri line m aa h
 // console.log(os.EOL);
